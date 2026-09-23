@@ -79,14 +79,6 @@
     readTime.hidden = false;
   }
 
-  /* ---- D3: the week, quartered ----------------------------------------- */
-  document.querySelectorAll(".week").forEach(function (week) {
-    week.querySelectorAll("li[data-q]").forEach(function (li) {
-      li.addEventListener("mouseenter", function () { week.setAttribute("data-active", li.getAttribute("data-q")); });
-      li.addEventListener("mouseleave", function () { week.removeAttribute("data-active"); });
-    });
-  });
-
   /* ---- Testimonials: a carousel, one voice at a time ------------------ */
   // Swipe, arrow keys, the arrows or the segments move between voices. Nothing advances on its own.
   document.querySelectorAll("[data-carousel]").forEach(function (box) {
@@ -166,37 +158,6 @@
     toHash();
     window.addEventListener("load", function () { requestAnimationFrame(toHash); });
     window.addEventListener("hashchange", toHash);
-  });
-
-  /* ---- D7: one breath before you apply --------------------------------- */
-  document.querySelectorAll("[data-breath]").forEach(function (box) {
-    var btn = box.querySelector(".breath-btn");
-    var say = box.querySelector(".breath-say");
-    var scope = box.closest("section") || document;
-    var next = scope.querySelector("[data-app-link]");
-    var running = false;
-    if (!btn || !say) return;
-    btn.addEventListener("click", function () {
-      if (running) return;
-      if (reduceMotion) {
-        say.textContent = "Breathe in for a count of four, and out for six. Whenever you’re ready.";
-        return;
-      }
-      running = true;
-      btn.setAttribute("aria-disabled", "true");
-      box.classList.add("is-in");
-      say.textContent = "Breathe in…";
-      setTimeout(function () {
-        box.classList.remove("is-in");
-        say.textContent = "…and out.";
-      }, 4000);
-      setTimeout(function () {
-        say.textContent = "Whenever you’re ready.";
-        btn.removeAttribute("aria-disabled");
-        running = false;
-        if (next && next.offsetParent !== null) next.focus();
-      }, 10000);
-    });
   });
 
   /* ---- D8: welcome back, after the application tab --------------------- */
