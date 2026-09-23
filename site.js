@@ -182,38 +182,6 @@
     if (document.visibilityState === "visible") welcomeBack();
   });
 
-  /* ---- Copy the address ------------------------------------------------ */
-  document.querySelectorAll(".copy-email").forEach(function (btn) {
-    var status = btn.parentElement.querySelector(".copy-status");
-    var timer;
-    function say(msg) {
-      if (!status) return;
-      status.textContent = msg;
-      clearTimeout(timer);
-      timer = setTimeout(function () { status.textContent = ""; }, 4000);
-    }
-    function selectAddress() {
-      var scope = btn.closest(".footer-block, .panel, section") || document;
-      var text = Array.prototype.find.call(scope.querySelectorAll(".email-text"), function (el) { return el.offsetParent !== null; });
-      if (text) {
-        var range = document.createRange();
-        range.selectNodeContents(text);
-        var sel = window.getSelection();
-        sel.removeAllRanges();
-        sel.addRange(range);
-      }
-      say("Selected. Press ⌘C or Ctrl+C to copy.");
-    }
-    btn.addEventListener("click", function () {
-      var addr = btn.getAttribute("data-email");
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(addr).then(function () { say("Copied."); }, selectAddress);
-      } else {
-        selectAddress();
-      }
-    });
-  });
-
   /* ---- D9: the season, from John's window ------------------------------ */
   var season = document.querySelector("[data-season]");
   if (season) {

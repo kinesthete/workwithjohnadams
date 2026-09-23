@@ -478,9 +478,6 @@ html.js .lineage:not(.is-in) .lineage-join::before { transform: scaleX(0); }
 html.js .lineage:not(.is-in) .lineage-join::after { transform: scaleY(0); }
 .lineage-line + .lineage-line .lineage-thread::before { transition-delay: 120ms; }
 
-/* ---- Copy the address -------------------------------------------------- */
-.copy-status { font-size: 14px; line-height: 22px; color: var(--sage); font-weight: 500; }
-
 /* ---- Next step (the end-of-page handoff) ------------------------------- */
 .next-step .section-head { margin-bottom: 0; }
 
@@ -515,14 +512,11 @@ html.js .lineage:not(.is-in) .lineage-join::after { transform: scaleY(0); }
   html.js .lineage:not(.is-in) .lineage-join::after { transform: none; }
 }
 
-/* ---- Controls that only work with JavaScript --------------------------- */
-html:not(.js) .copy-email { display: none !important; }
-
 /* ---- Print: the taster and cohort pages as clean flyers ---------------- */
 @media print {
   :root { --surface: #fff; --surface-raised: #fff; --surface-sunk: #fff; --ink: #000; --ink-muted: #333; --line: #bbb; --ochre-deep: #000; --link: #000; }
   body { font-size: 12pt; line-height: 1.45; }
-  .site-header, .site-footer, .skip-link, .quote-band, .brand-motion, .photo, .read-time, .copy-email, .copy-status { display: none !important; }
+  .site-header, .site-footer, .skip-link, .quote-band, .brand-motion, .photo, .read-time { display: none !important; }
   .section, .hero { padding-block: 12pt; }
   .split { display: block; }
   .panel-float { box-shadow: none; border: 1px solid #999; }
