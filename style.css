@@ -154,7 +154,10 @@ h3 { font-size: 22px; line-height: 30px; font-weight: 400; }
 .header-inner { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2) var(--space-6); padding-block: var(--space-4); }
 .brand { order: 1; margin-right: auto; display: inline-flex; align-items: center; gap: var(--space-3); color: var(--ink); text-decoration: none; }
 .brand:hover { text-decoration: none; }
-.brand .mark { width: 32px; height: 32px; color: var(--ochre); flex: none; }
+.brand .mark { width: 32px; height: 32px; color: var(--ochre); flex: none; transition: transform 220ms var(--ease); }
+@media (prefers-reduced-motion: no-preference) {
+  .brand:hover .mark, .brand:focus-visible .mark { transform: rotate(90deg); }
+}
 .brand-name { font-family: var(--font-serif); font-size: 22px; line-height: 30px; font-weight: 400; }
 .site-nav { order: 2; display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2) var(--space-6); }
 .site-nav a { font-size: 15px; line-height: 20px; font-weight: 500; letter-spacing: 0.01em; color: var(--ink-muted); text-decoration: none; padding: var(--space-2) 0; border-bottom: 1px solid transparent; }
