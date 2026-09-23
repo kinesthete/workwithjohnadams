@@ -1,0 +1,8 @@
+# Working files for Sam and John, not for visitors (see _notes/pipeline.md)
+_notes/
+_original/
+images/originals/
+
+# Local tooling
+.claude/
+.DS_Store

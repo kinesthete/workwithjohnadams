@@ -1,0 +1,23 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//John Adams//workwithjohnadams.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:habits-of-being-deadline-20261007@workwithjohnadams.com
+DTSTAMP:20260922T120000Z
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
+SUMMARY:Habits of Being: last day to apply
+DESCRIPTION:Applications for the fall cohort with John Adams are open throu
+ gh Wednesday\, October 7. The cohort begins the week of October 12 (or 19)
+ . https://workwithjohnadams.com/apply.html
+URL:https://workwithjohnadams.com/apply.html
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Habits of Being: applications are open through Wednesday\, Octo
+ ber 7
+TRIGGER:-P1DT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
