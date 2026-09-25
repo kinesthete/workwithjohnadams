@@ -550,3 +550,11 @@ html.js .lineage:not(.is-in) .lineage-join::after { transform: scaleY(0); }
   .carousel-track { display: block; overflow: visible; }
   .slide { break-inside: avoid; margin-bottom: 12pt; }
 }
+
+/* Featured referral endorsement */
+.featured-testimonial { margin: var(--space-6) 0 0; padding: var(--space-5); background: var(--ochre-soft); border-left: 3px solid var(--ochre-deep); }
+.featured-testimonial blockquote { margin: 0; font-family: var(--font-serif); font-size: 21px; line-height: 1.5; font-weight: 300; }
+.featured-testimonial figcaption { margin-top: var(--space-5); font-size: 14px; line-height: 1.6; color: var(--ink-muted); }
+.featured-testimonial > a { display: inline-block; margin-top: var(--space-4); font-size: 15px; }
+.featured-testimonial-home { max-width: 52rem; }
+@media (min-width: 48rem) { .featured-testimonial { padding: var(--space-6); } .featured-testimonial-home blockquote { font-size: 24px; } }

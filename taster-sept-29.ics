@@ -5,13 +5,14 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:taster-20260929@workwithjohnadams.com
-DTSTAMP:20260922T120000Z
-DTSTART:20260929T233000Z
-DTEND:20260930T010000Z
+DTSTAMP:20260925T040000Z
+SEQUENCE:1
+DTSTART:20260929T230000Z
+DTEND:20260930T003000Z
 SUMMARY:Introduction to Relational Somatics\, with John Adams
 LOCATION:Sanctuary\, 3rd floor of Thornes Marketplace\, 150 Main St.\, Nort
  hampton\, MA
-DESCRIPTION:Pattern & Possibility in the Body You Bring. 7:30–9pm. $20–
+DESCRIPTION:Pattern & Possibility in the Body You Bring. 7–8:30pm. $20–
  30 suggested. RSVP: talk.to.johnadams@gmail.com. Therapists especially wel
  come. https://workwithjohnadams.com/taster.html
 URL:https://workwithjohnadams.com/taster.html
