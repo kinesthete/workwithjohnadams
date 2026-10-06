@@ -558,3 +558,15 @@ html.js .lineage:not(.is-in) .lineage-join::after { transform: scaleY(0); }
 .featured-testimonial > a { display: inline-block; margin-top: var(--space-4); font-size: 15px; }
 .featured-testimonial-home { max-width: 52rem; }
 @media (min-width: 48rem) { .featured-testimonial { padding: var(--space-6); } .featured-testimonial-home blockquote { font-size: 24px; } }
+
+/* Photo signature and Bodywork page */
+.photo-frame { position: relative; }
+.photo-frame > img { display: block; }
+.photo .photo-mark { position: absolute; right: 14px; bottom: 14px; width: 44px; height: 44px; color: #f5f0e7; opacity: .88; filter: drop-shadow(0 1px 3px #0008); pointer-events: none; }
+.photo-natural img { height: auto; max-height: 660px; object-fit: contain; }
+.photo figcaption { margin-top: 12px; font-family: var(--font-serif); font-style: italic; font-size: 22px; }
+.play-ending { margin-top: var(--space-7); }
+.play-ending .photo { max-width: 48rem; margin-inline: auto; }
+.bodywork-quotes { display: grid; gap: var(--space-6); }
+.bodywork-quotes .featured-testimonial { margin: 0; }
+@media (min-width: 48rem) { .bodywork-quotes { grid-template-columns: 1fr 1fr; } }
