@@ -570,3 +570,6 @@ html.js .lineage:not(.is-in) .lineage-join::after { transform: scaleY(0); }
 .bodywork-quotes { display: grid; gap: var(--space-6); }
 .bodywork-quotes .featured-testimonial { margin: 0; }
 @media (min-width: 48rem) { .bodywork-quotes { grid-template-columns: 1fr 1fr; } }
+
+/* Keep breathing room at the Bodywork page's background transitions. */
+#bodywork-voices.section, #sessions.section { padding-top: var(--section-gap); }
