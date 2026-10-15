@@ -222,7 +222,7 @@
   /* ---- For anyone who looks under the surface -------------------------- */
   if (window.console && console.log) {
     console.log(
-      "%cYou looked under the surface.%c\nIf you’re curious about the fall cohort: talk.to.johnadams@gmail.com",
+      "%cYou looked under the surface.%c\nIf you’re curious about the winter cohort: talk.to.johnadams@gmail.com",
       "font: italic 300 18px/1.6 Newsreader, Georgia, serif; color: #7d5d0c;",
       "font: 13px/1.6 system-ui, sans-serif; color: #655b4f;"
     );

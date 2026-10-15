@@ -5,19 +5,19 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:habits-of-being-deadline-20261007@workwithjohnadams.com
-SEQUENCE:2
-DTSTAMP:20261006T044000Z
-DTSTART;VALUE=DATE:20261021
-DTEND;VALUE=DATE:20261022
+SEQUENCE:3
+DTSTAMP:20261015T120000Z
+DTSTART;VALUE=DATE:20270106
+DTEND;VALUE=DATE:20270107
 SUMMARY:Habits of Being: last day to apply
-DESCRIPTION:Applications for the fall cohort with John Adams are open throu
- gh Wednesday\, October 21. The cohort begins the week of October 26. https
- ://workwithjohnadams.com/apply.html
+DESCRIPTION:Applications for the winter cohort with John Adams are open thr
+ ough Wednesday\, January 6. The cohort begins the week of January 11\, 202
+ 7. https://workwithjohnadams.com/apply.html
 URL:https://workwithjohnadams.com/apply.html
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Habits of Being: applications are open through Wednesday\, Octo
- ber 21
+DESCRIPTION:Habits of Being: applications are open through Wednesday\, Janu
+ ary 6
 TRIGGER:-P1DT15H
 END:VALARM
 END:VEVENT
