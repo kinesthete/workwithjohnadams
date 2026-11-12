@@ -573,3 +573,25 @@ html.js .lineage:not(.is-in) .lineage-join::after { transform: scaleY(0); }
 
 /* Keep breathing room at the Bodywork page's background transitions. */
 #bodywork-voices.section, #sessions.section { padding-top: var(--section-gap); }
+
+/* Kit mailing-list form, shared across every page. */
+.newsletter-signup { background: var(--surface-sunk); border-top: 1px solid var(--line); }
+.newsletter-embed { max-width: 700px; margin-inline: auto; }
+.newsletter-signup .formkit-form[data-uid="cc1cfb6171"] { width: 100%; max-width: 100%; font-family: var(--font-sans); box-shadow: none; overflow: visible; }
+.newsletter-signup .formkit-form[data-uid="cc1cfb6171"] .formkit-container { background: transparent !important; box-shadow: none; padding: 0; }
+.newsletter-signup .formkit-form[data-uid="cc1cfb6171"] .formkit-hero { padding: 0 0 var(--space-5); }
+.newsletter-signup .formkit-hero-bg-color, .newsletter-signup .formkit-hero-bg-img { display: none; }
+.newsletter-signup .formkit-form[data-uid="cc1cfb6171"] .formkit-header { color: var(--ink) !important; font-family: var(--font-serif); font-size: clamp(32px, 4vw, 44px) !important; font-weight: 400 !important; line-height: 1.2; }
+.newsletter-signup .formkit-form[data-uid="cc1cfb6171"] .formkit-content { color: var(--ink-muted) !important; }
+.newsletter-signup .formkit-form[data-uid="cc1cfb6171"] .formkit-input { color: var(--ink) !important; background: var(--surface); border-color: var(--line-strong) !important; font-size: 16px; min-height: 48px; }
+.newsletter-signup .formkit-form[data-uid="cc1cfb6171"] .formkit-submit { background: var(--ink) !important; color: var(--surface) !important; min-height: 48px; }
+.newsletter-signup .formkit-form[data-uid="cc1cfb6171"] .formkit-submit:hover { background: var(--ochre-deep) !important; }
+.newsletter-signup .formkit-input:focus-visible, .newsletter-signup .formkit-submit:focus-visible { outline: 2px solid var(--ochre-deep); outline-offset: 3px; }
+.newsletter-fallback { text-align: center; margin-top: var(--space-4); }
+@media (max-width: 36rem) {
+  .newsletter-signup .formkit-form[data-uid="cc1cfb6171"] .formkit-fields { display: block; }
+  .newsletter-signup .formkit-form[data-uid="cc1cfb6171"] .formkit-field { margin-bottom: 12px !important; }
+  .newsletter-signup .formkit-form[data-uid="cc1cfb6171"] .formkit-field input { width: 100%; border-right: 1px solid var(--line-strong) !important; }
+  .newsletter-signup .formkit-form[data-uid="cc1cfb6171"] .formkit-submit { width: 100%; }
+}
+@media print { .newsletter-signup { display: none; } }
